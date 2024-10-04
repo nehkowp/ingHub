@@ -50,11 +50,15 @@ int main(int argc, char** argv){
         return -1;
     }
     
-    //Comparaison du produit des deux nombres si supérieur à 0
-    if(int_num1 * int_num2 >= 0){
-        printf("Le produit de %f et %f est positif\n",int_num1,int_num2);
-    }else{
+   
+    // Si un des nombres est négatif et l'autre positif alors le produit est négatif
+    if(int_num1 < 0 && int_num2 > 0){
         printf("Le produit de %f et %f est strictement négatif\n",int_num1,int_num2);
+    }else if(int_num1 > 0  && int_num2 < 0){
+        printf("Le produit de %f et %f est strictement négatif\n",int_num1,int_num2);
+    }else{
+        //Sinon le produit est positif
+        printf("Le produit de %f et %f est positif\n",int_num1,int_num2);
     }
 
     return (0);
