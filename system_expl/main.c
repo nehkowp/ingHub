@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 
 int main() {
-    int retval, status;
+    int status;
     pid_t p;
 
     int nombre = 3;
@@ -27,20 +27,6 @@ int main() {
                 printf("Je suis le fils numéro %d: mon PID est %d et mon PPID est %d\n",i, getpid(), getppid());
                 sleep(1);  /* sleep for 1 second */
 
-                // // Afficher le PID du père du processus
-                // printf("Le numéro du père du processus (PPID) est : %d\n", getppid());
-
-                // // Afficher l'UID réel du processus
-                // printf("L'UID fils réel du processus (UID) est : %d\n", getuid());
-
-                // // Afficher l'UID effectif du processus
-                // printf("L'UID fils effectif du processus (EUID) est : %d\n", geteuid());
-
-                // // Afficher le GID réel du processus
-                // printf("Le GID fils réel du processus (GID) est : %d\n", getgid());
-
-                // // Afficher le GID effectif du processus
-                // printf("Le GID fils effectif du processus (EGID) est : %d\n", getegid());
 
                 exit(getpid());
 
@@ -59,21 +45,6 @@ int main() {
         printf("Décimal : %f\n",decimal);
         printf("Adresse Nombre :  %p\n",&nombre);
         printf("Adresse Décimal : %p\n",&decimal);
-
-        // Afficher le PID du père du processus
-        // printf("Le numéro du père du processus père (PPID) est : %d\n", getppid());
-
-        // // Afficher l'UID réel du processus
-        // printf("L'UID réel  du processus père (UID) est : %d\n", getuid());
-
-        // // Afficher l'UID effectif du processus
-        // printf("L'UID effectif du processus père (EUID) est : %d\n", geteuid());
-
-        // // Afficher le GID réel du processus père
-        // printf("Le GID  réel du processus père (GID) est : %d\n", getgid());
-
-        // // Afficher le GID effectif du processus père
-        // printf("Le GID effectif du processus père (EGID) est : %d\n", getegid());
 
         printf("PARENT: I will wait for my child to exit.\n");
         for (int i = 0; i < 4; i++) {
