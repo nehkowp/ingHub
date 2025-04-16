@@ -28,13 +28,13 @@ CREATE TABLE Album (
   dateDeSortie date NOT NULL
 );
 
-
+x
 CREATE TABLE Chanson (
   idChanson int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   titre varchar(42) NOT NULL,
   duree int(42) NOT NULL,
   idAlbum int(11),
-  FOREIGN KEY (idAlbum) REFERENCES Album(idAlbum)
+  FOREIGN KEY fk_idAlbum (idAlbum) REFERENCES Album(idAlbum)
 );
 
 
@@ -42,7 +42,7 @@ CREATE TABLE ArtisteComposer (
   idArtiste int(11) NOT NULL,
   idAlbum int(11) NOT NULL,
   CONSTRAINT pk_artisteComposer PRIMARY KEY (idAlbum,idArtiste),
-  FOREIGN KEY (idArtiste) REFERENCES Artiste(idArtiste),
+  FOREIGN KEY (idArtiste) REFERENCES Artiste(idArtiste) ON DELETE CASCADE ,
   FOREIGN KEY (idAlbum) REFERENCES Album(idAlbum)
 );
 

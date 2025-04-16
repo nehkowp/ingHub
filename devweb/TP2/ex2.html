@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice2</title>
+</head>
+<body>
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const div = document.createElement('div');
+        div.id = 'divTP1';
+        
+        const textNode1 = document.createTextNode('Le ');
+        
+        const strong1 = document.createElement('strong');
+        strong1.textContent = 'World Wide Web Consortium';
+        
+        const textNode2 = document.createTextNode(', abrégé par le sigle ');
+        
+        const strong2 = document.createElement('strong');
+        strong2.textContent = 'W3C';
+        
+        const textNode3 = document.createTextNode(', est un ');
+        
+        const a1 = document.createElement('a');
+        a1.href = 'http://fr.wikipedia.org/wiki/Organisme_de_normalisation';
+        a1.title = 'Organisme de normalisation';
+        a1.textContent = 'organisme de standardisation';
+        
+        const textNode4 = document.createTextNode(' à but non-lucratif chargé de promouvoir la compatibilité des technologies du ');
+        
+        const a2 = document.createElement('a');
+        a2.href = 'http://fr.wikipedia.org/wiki/World_Wide_Web';
+        a2.title = 'World Wide Web';
+        a2.textContent = 'World Wide Web';
+        
+        const textNode5 = document.createTextNode('.');
+        
+        div.appendChild(textNode1);
+        div.appendChild(strong1);
+        div.appendChild(textNode2);
+        div.appendChild(strong2);
+        div.appendChild(textNode3);
+        div.appendChild(a1);
+        div.appendChild(textNode4);
+        div.appendChild(a2);
+        div.appendChild(textNode5);
+        
+        document.body.appendChild(div);
+    });
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6 - Alertes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        img {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #ddd;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            alert('La page a été chargée!');
+        };
+        
+        function handleImageHover() {
+            alert('Vous avez passé la souris sur l\'image!');
+        }
+        
+        function handleButtonClick() {
+            alert('Vous avez cliqué sur le bouton!');
+        }
+        
+        document.onkeydown = function(event) {
+            alert('Vous avez appuyé sur la touche: ' + event.key);
+        };
+        
+        function useDocumentWrite() {
+            document.write('<h1>Nouveau contenu!</h1><p>Le contenu précédent a été remplacé.</p>');
+        }
+        
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = 'lightblue';
+        }
+        
+        function changeButtonStyle(button) {
+            button.style.backgroundColor = 'red';
+            button.style.color = 'white';
+            button.style.fontWeight = 'bold';
+        }
+        
+        function resetStyles() {
+            document.body.style.backgroundColor = 'white';
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => {
+                button.style.backgroundColor = '';
+                button.style.color = '';
+                button.style.fontWeight = '';
+            });
+        }
+        
+        function changeImage(img, newSrc) {
+            img.setAttribute('data-original', img.src);
+            img.src = newSrc;
+        }
+        
+        function restoreImage(img) {
+            if (img.getAttribute('data-original')) {
+                img.src = img.getAttribute('data-original');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercice 6 - Alertes et événements</h1>
+    
+    <h2>Images avec événements</h2>
+    <img src="images/image1.jpg" alt="Image 1"
+         onmouseover="handleImageHover(); changeImage(this, 'images/image2.jpg');"
+         onmouseout="restoreImage(this);">
+    
+    <h2>Boutons</h2>
+    <button class="button" onclick="handleButtonClick()">Cliquez-moi</button>
+    <button class="button" onclick="useDocumentWrite()">Utiliser document.write()</button>
+    <button class="button" onclick="changeBackgroundColor()">Changer la couleur de fond</button>
+    <button class="button" onclick="changeButtonStyle(this)">Changer mon style</button>
+    <button class="button" onclick="resetStyles()">Réinitialiser</button>
+</body>
+</html>

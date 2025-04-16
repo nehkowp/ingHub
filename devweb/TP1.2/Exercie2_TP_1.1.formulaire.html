@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire HTML5</title>
+</head>
+<body>
+    <h1>Mon premier Formulaire HTML5</h1>
+
+    <form action="Exercice2_TP_1.1_destination.php" method="POST">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            
+            <label for="nom">Nom* :</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="prenom">Prénom* :</label>
+            <input type="text" id="prenom" name="prenom" required><br>
+
+            <label for="naissance">Date de naissance :</label>
+            <input type="date" id="naissance" name="naissance"><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="website">Page personnelle :</label>
+            <input type="url" id="website" name="website"><br>
+
+            <label for="code">Code secret :</label>
+            <input type="password" id="code" name="code" size="40" maxlength="8" 
+                   pattern="[A-Z]{2}[0-9]{4}[a-z]{2}"><br>
+
+            <label>Sexe :</label>
+            <input type="radio" id="homme" name="sexe" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="sexe" value="femme">
+            <label for="femme">Femme</label><br>
+
+            <label for="pays">Pays :</label>
+            <select id="pays" name="pays" size="1">
+                <optgroup label="Europe">
+                    <option value="France">France</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Allemagne">Allemagne</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Argentine">Argentine</option>
+                    <option value="Mexique">Mexique</option>
+                </optgroup>
+                <optgroup label="Autres">
+                    <option value="Afrique">Afrique</option>
+                    <option value="Asie">Asie</option>
+                    <option value="Océanie">Océanie</option>
+                    <option value="Australie">Australie</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Préférences</legend>
+            <input type="checkbox" id="option1" name="option1">
+            <label for="option1">Option 1</label><br>
+            <input type="checkbox" id="option2" name="option2">
+            <label for="option2">Option 2</label><br>
+            <input type="checkbox" id="option3" name="option3">
+            <label for="option3">Option 3</label><br>
+
+            <textarea cols="50" rows="5" onclick="this.value = ' '">
+            </textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fichiers et validation</legend>
+            <input type="file" name="fichier"><br>
+            <input type="hidden" name="secret" value="valeur_cachee">
+            
+            <input type="reset" value="Effacer">
+            <input type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+</body>
+</html>

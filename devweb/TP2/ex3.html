@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice3</title>
+</head>
+<body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const div = document.createElement('div');
+    div.id = 'divTP3';
+    
+    const p = document.createElement('p');
+    p.textContent = 'Langages basés sur ECMAScript :';
+    
+    const dl = document.createElement('dl');
+    
+    const languages = [
+        {
+            name: 'JavaScript',
+            description: 'JavaScript est un langage de programmation de scripts principalement utilisé dans les pages web interactives mais aussi coté serveur.'
+        },
+        {
+            name: 'JScript',
+            description: 'JScript est le nom générique de plusieurs implémentations d\'ECMAScript 3 créées par Microsoft.'
+        },
+        {
+            name: 'ActionScript',
+            description: 'ActionScript est le langage de programmation utilisé au sein d\'applications clientes (Adobe Flash, Adobe Flex) et serveur (Flash media server, JRun, Macromedia Generator).'
+        },
+        {
+            name: 'EX4',
+            description: 'ECMAScript for XML (E4X) est une extension XML au langage ECMAScript.'
+        }
+    ];
+    
+    languages.forEach(language => {
+        const dt = document.createElement('dt');
+        dt.textContent = language.name;
+        
+        const dd = document.createElement('dd');
+        dd.textContent = language.description;
+        
+        dl.appendChild(dt);
+        dl.appendChild(dd);
+    });
+    
+    div.appendChild(p);
+    div.appendChild(dl);
+    
+    document.body.appendChild(div);
+});
+</script>
+    </body>
+</html>

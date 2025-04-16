@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 2 - Javascript et DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 10px;
+        }
+        
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .exercise-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+        
+        .exercise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: #e9f0f7;
+        }
+        
+        .exercise-card h3 {
+            margin-top: 0;
+            color: #004080;
+        }
+        
+        .exercise-card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .exercise-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #004080;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .exercise-card a:hover {
+            background-color: #00295a;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>TP 2 - Javascript et DOM</h1>
+    
+    <div class="exercise-grid">
+        <div class="exercise-card">
+            <h3>Exercice 1</h3>
+            <p>Création d'une liste de langages basés sur ECMAScript en utilisant le DOM.</p>
+            <a href="ex1.html">Voir l'exercice</a>
+        </div>
+        
+        <div class="exercise-card">
+            <h3>Exercice 2</h3>
+            <p>Création d'un paragraphe sur le W3C avec des liens et des éléments en gras en utilisant le DOM.</p>
+            <a href="ex2.html">Voir l'exercice</a>
+        </div>
+        
+        <div class="exercise-card">
+            <h3>Exercice 3</h3>
+            <p>Création d'une liste de définitions sur les langages ECMAScript en utilisant le DOM.</p>
+            <a href="ex3.html">Voir l'exercice</a>
+        </div>
+        
+        <div class="exercise-card">
+            <h3>Exercice 4</h3>
+            <p>Création d'un formulaire d'upload d'image en utilisant le DOM.</p>
+            <a href="ex4.html">Voir l'exercice</a>
+        </div>
+        
+        <div class="exercise-card">
+            <h3>Exercice 5</h3>
+            <p>Manipulation de tableaux en JavaScript (notes, prénoms, images).</p>
+            <a href="ex5.html">Voir l'exercice</a>
+        </div>
+        
+        <div class="exercise-card">
+            <h3>Exercice 6</h3>
+            <p>Ajout d'alertes et événements sur différents éléments HTML.</p>
+            <a href="ex6.html">Voir l'exercice</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>TP 2 - JavaScript et DOM </p>
+    </div>
+</body>
+</html>

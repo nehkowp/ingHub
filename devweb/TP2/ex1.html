@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice1</title>
+</head>
+<body>
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const div = document.createElement('div');
+        div.id = 'divTP2';
+        
+        const p = document.createElement('p');
+        p.textContent = 'Langages basés sur ECMAScript :';
+        
+        const ul = document.createElement('ul');
+        
+        const languages = ['JavaScript', 'JScript', 'ActionScript', 'EX4'];
+        
+        languages.forEach(language => {
+            const li = document.createElement('li');
+            li.textContent = language;
+            ul.appendChild(li);
+        });
+        
+        div.appendChild(p);
+        div.appendChild(ul);
+        
+        document.body.appendChild(div);
+    });
+    </script>
+</body>
+
+</html>

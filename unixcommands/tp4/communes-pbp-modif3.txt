@@ -1,0 +1,38 @@
+﻿code_insee;nom;commune_multi_cantonale;popul;nom_canton;epci;nom_sdsei;nom_utd;cons_dptale;cons_dptal;num_sdsei;siren_epci
+64139;Bosdarros;non;995;Ouzom,,ave,t,ives,u,eez;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Valérie,AMBON;Jean,RRIUBERGE;SDSEI 6;216401398
+64072;Aubertin;non;666;Billère,t,oteaux,e,urançon;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Véronique,EHOS;Patrice,ADUEL;SDSEI 6;216400721
+
+
+64129;Billère;non;14080;Billère,t,oteaux,e,urançon;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Véronique,EHOS;Patrice,ADUEL;SDSEI 6;216401299
+64348;Lons;non;14188;Lescar,,ave,t,erres,u,ont-Long;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Sandrine,AFARGUE;Nicolas,ATRIARCHE;SDSEI 6;216403485
+64549;Uzein;non;1310;Lescar,,ave,t,erres,u,ont-Long;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Sandrine,AFARGUE;Nicolas,ATRIARCHE;SDSEI 6;216405498
+64059;Artigueloutan;non;1121;Pays,e,orlaàs,t,u,ontanérès;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Isabelle,AHORE;Thierry,ARRERE;SDSEI 6;216400598
+
+
+64269;Idron;non;5078;Pau-2;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Karine,ERE;Jean-François,AISON;SDSEI 6;216402693
+64467;Rontignon;non;879;Ouzom,,ave,t,ives,u,eez;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Valérie,AMBON;Jean,RRIUBERGE;SDSEI 6;216404673
+64041;Aressy;non;835;Ouzom,,ave,t,ives,u,eez;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Valérie,AMBON;Jean,RRIUBERGE;SDSEI 6;216400416
+64439;Ousse;non;1716;Pays,e,orlaàs,t,u,ontanérès;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Isabelle,AHORE;Thierry,ARRERE;SDSEI 6;216414052
+64550;Uzos;non;860;Ouzom,,ave,t,ives,u,eez;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Valérie,AMBON;Jean,RRIUBERGE;SDSEI 6;216405506
+64037;Arbus;non;1275;Lescar,,ave,t,erres,u,ont-Long;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Sandrine,AFARGUE;Nicolas,ATRIARCHE;SDSEI 6;216400374
+64518;Sendets;non;1171;Pays,e,orlaàs,t,u,ontanérès;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Isabelle,AHORE;Thierry,ARRERE;SDSEI 6;216414060
+
+
+64237;Gelos;non;3737;Pau-4;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Véronique,IPSOS-SALLENAVE;Jean,ACOSTE;SDSEI 6;216402370
+64284;Jurançon;non;7301;Billère,t,oteaux,e,urançon;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Véronique,EHOS;Patrice,ADUEL;SDSEI 6;216402842
+64373;Mazères-Lezons;non;1861;Pau-3;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Monique,EMAVOINE;André,RRIBES;SDSEI 6;216403733
+64315;Laroin;non;1089;Billère,t,oteaux,e,urançon;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Véronique,EHOS;Patrice,ADUEL;SDSEI 6;216403154
+64448;Poey-de-Lescar;non;1871;Lescar,,ave,t,erres,u,ont-Long;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Sandrine,AFARGUE;Nicolas,ATRIARCHE;SDSEI 6;216404483
+64478;Saint-Faust;non;759;Billère,t,oteaux,e,urançon;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Véronique,EHOS;Patrice,ADUEL;SDSEI 6;216404780
+64198;Denguin;non;1820;Artix,t,ays,e,oubestre;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AVES,T,OUBESTRE;Fabienne,OSTEDOAT-DIU;Bernard,UPONT;SDSEI 6;216401984
+64376;Meillon;non;969;Ouzom,,ave,t,ives,u,eez;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Valérie,AMBON;Jean,RRIUBERGE;SDSEI 6;216403766
+64445;Pau;oui;78375;"Pau-1 ;,au-2;,au-3 ;,au-4";CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;"Stéphanie,AZA 
+64060;Artiguelouve;non;2047;Lescar,,ave,t,erres,u,ont-Long;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Sandrine,AFARGUE;Nicolas,ATRIARCHE;SDSEI 6;216400606
+64132;Bizanos;non;4649;Pau-3;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Monique,EMAVOINE;André,RRIBES;SDSEI 6;216401323
+64329;Lée;non;1307;Pays,e,orlaàs,t,u,ontanérès;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Isabelle,AHORE;Thierry,ARRERE;SDSEI 6;216405712
+64335;Lescar;non;9947;Lescar,,ave,t,erres,u,ont-Long;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Sandrine,AFARGUE;Nicolas,ATRIARCHE;SDSEI 6;216403352
+64525;Siros;non;833;Lescar,,ave,t,erres,u,ont-Long;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Sandrine,AFARGUE;Nicolas,ATRIARCHE;SDSEI 6;216405258
+64142;Bougarber;non;861;Artix,t,ays,e,oubestre;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AVES,T,OUBESTRE;Fabienne,OSTEDOAT-DIU;Bernard,UPONT;SDSEI 6;216401422
+64121;Beyrie-en-Béarn;non;197;Artix,t,ays,e,oubestre;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AVES,T,OUBESTRE;Fabienne,OSTEDOAT-DIU;Bernard,UPONT;SDSEI 6;216401216
+64230;Gan;non;5744;Ouzom,,ave,t,ives,u,eez;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AU,T,ST,EARN;Valérie,AMBON;Jean,RRIUBERGE;SDSEI 6;216402305
+64080;Aussevielle;non;838;Artix,t,ays,e,oubestre;CA,AU,EARN,YRENEES;Pau,gglomération;UTD,AVES,T,OUBESTRE;Fabienne,OSTEDOAT-DIU;Bernard,UPONT;SDSEI 6;216400804

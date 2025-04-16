@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice5</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Exercice 5.1
+    const notes = [12, 15, 8, 9, 17, 6, 13, 19, 4, 10, 14, 11, 16, 5, 7];
+    
+    function afficherTableau(tableau) {
+        document.body.innerHTML += '<h3>Affichage du tableau des notes</h3>';
+        document.body.innerHTML += '[' + tableau.join(', ') + ']';
+    }
+    
+    function compterSuperieurOuEgalA10(tableau) {
+        return tableau.filter(note => note >= 10).length;
+    }
+    
+    function calculerMoyenne(tableau) {
+        const somme = tableau.reduce((acc, note) => acc + note, 0);
+        return somme / tableau.length;
+    }
+    
+    function trouverNoteMaximale(tableau) {
+        return Math.max(...tableau);
+    }
+    
+    function rechercherNote(tableau, noteRecherchee) {
+        return tableau.includes(noteRecherchee);
+    }
+    
+    afficherTableau(notes);
+    document.body.innerHTML += '<p>Nombre d\'étudiants avec 10 ou plus: ' + compterSuperieurOuEgalA10(notes) + '</p>';
+    document.body.innerHTML += '<p>Moyenne des notes: ' + calculerMoyenne(notes).toFixed(2) + '</p>';
+    document.body.innerHTML += '<p>Note maximale: ' + trouverNoteMaximale(notes) + '</p>';
+    document.body.innerHTML += '<p>Recherche de la note 15: ' + (rechercherNote(notes, 15) ? 'Trouvée' : 'Non trouvée') + '</p>';
+    
+    // Exercice 5.2
+    const prenoms = ['Thomas', 'Julie', 'Nicolas', 'Sophie', 'Antoine', 'Camille'];
+    
+    function afficherPrenomsListe(tableau) {
+        document.body.innerHTML += '<h3>Liste des prénoms</h3>';
+        let liste = '<ul>';
+        
+        for (let i = 0; i < tableau.length; i++) {
+            liste += '<li>' + tableau[i] + '</li>';
+        }
+        
+        liste += '</ul>';
+        document.body.innerHTML += liste;
+    }
+    
+    function afficherPrenomsListeInverse(tableau) {
+        document.body.innerHTML += '<h3>Liste des prénoms (ordre inverse)</h3>';
+        let liste = '<ul>';
+        
+        for (let i = tableau.length - 1; i >= 0; i--) {
+            liste += '<li>' + tableau[i] + '</li>';
+        }
+        
+        liste += '</ul>';
+        document.body.innerHTML += liste;
+    }
+    
+    afficherPrenomsListe(prenoms);
+    afficherPrenomsListeInverse(prenoms);
+    
+    // Exercice 5.3
+    const imagesChemins = [
+        'images/image1.jpg',
+        'images/image2.jpg',
+        'images/image3.jpg',
+        'images/image4.jpg'
+    ];
+    
+    function afficherImagesTableau(tableau, orientation) {
+        document.body.innerHTML += '<h3>Affichage des images (' + (orientation === 'horizontal' ? 'horizontal' : 'vertical') + ')</h3>';
+        
+        let table = '<table>';
+        
+        if (orientation === 'horizontal') {
+            table += '<tr>';
+            
+            for (let i = 0; i < tableau.length; i++) {
+                table += '<td><img src="' + tableau[i] + '" alt="Image ' + (i + 1) + '" width="100"></td>';
+            }
+            
+            table += '</tr>';
+        } else {
+            for (let i = 0; i < tableau.length; i++) {
+                table += '<tr><td><img src="' + tableau[i] + '" alt="Image ' + (i + 1) + '" width="100"></td></tr>';
+            }
+        }
+        
+        table += '</table>';
+        document.body.innerHTML += table;
+    }
+    
+    afficherImagesTableau(imagesChemins, 'horizontal');
+    afficherImagesTableau(imagesChemins, 'vertical');
+});
+    </script>
+</body>
+</html>
